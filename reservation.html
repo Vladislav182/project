@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon"/>
+    <title>Barber Shop Fonchi | РЕЗЕРВАЦИЯ</title>
+    <script
+      src="https://kit.fontawesome.com/3087601fb4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="reservation-page">
+    <button id="go-back">
+      <a href="index.php" title="Върнете се на началната страница">
+        <i class="fa-solid fa-house-user"></i>
+      </a>
+    </button>
+
+    <h1 id="reservation-heading">НАПРАВЕТЕ ВАШАТА РЕЗЕРВАЦИЯ ОЩЕ СЕГА!</h1>
+
+    <form action="./reservation.php" method="POST" id="reservation-form">
+      <label for="first-name">Първо име:</label>
+      <input
+        type="text"
+        id="first-name"
+        name="first-name"
+        placeholder="Напр.: Владислав"
+      />
+
+      <label for="last-name">Фамилия:</label>
+      <input
+        type="text"
+        id="last-name"
+        name="last-name"
+        placeholder="Напр.: Димитров"
+      />
+
+      <label for="phone-number">Телефонен номер:</label>
+      <input
+        type="tel"
+        id="phone-number"
+        name="phone-number"
+        placeholder="Напр.: 0897569546"
+      />
+
+      <label for="email">Имейл:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Напр.: vladislavd268@gmail.com"
+      />
+
+      <label for="calendar">Изберете дата:</label>
+      <input type="date" id="calendar" name="calendar" />
+
+      <input type="submit" value="РЕЗЕРВИРАЙТЕ" name="submit"/>
+    </form>
+    
+  </body>
+</html>
